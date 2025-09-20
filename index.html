@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>UNDANGAN</title>
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|McLaren' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+			
+			<header>
+			
+				<h1><strong>Selamat datang di undanganku</strong></h1>
+					<h2><strong>NOTE : Disarankan buka dengan menggunakan versi dekstop di browser anda. Terima Kasih.</strong></h2>
+
+						<nav class="buttons">
+							<a href="index.html">Home</a>
+							<a href="undangan/index.html">Undangan</a>
+						</nav>
+
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+				
+				<h2 class="cs-text">
+					<span>W</span>
+					<span>E</span>
+					<span>L</span>
+					<span>C</span>
+					<span>O</span>
+					<span>M</span>
+					<span>E</span>
+					<span></span>
+				</h2>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="simply-countdow"></div>
+				</div>
+
+<section class="countdown">
+  <div class="timer">
+    <div class="counter">
+      <div class="counter__box black-white">
+        <p class="counter__time" id="days"></p>
+        <p class="counter__duration">days</p>
+      </div>
+      <div class="counter__box sky-blue">
+        <p class="counter__time" id="hours"></p>
+        <p class="counter__duration">hours</p>
+      </div>
+      <p class="dots">:</p>
+      <div class="counter__box sky-blue">
+        <p class="counter__time" id="minutes"></p>
+        <p class="counter__duration">minutes</p>
+      </div>
+      <p class="dots">:</p>
+      <div class="counter__box sky-blue">
+        <p class="counter__time" id="seconds"></p>
+        <p class="counter__duration">seconds</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>	
+body {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  font-family: "Nunito Sans", sans-serif;
+  color: #002e46;
+}
+
+.timer,
+.signup {
+  //flex: 1;
+  //border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  //align-content: space-around;
+}
+
+.timer h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.signup h1 {
+  max-width: 350px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 280px;
+  padding: 10px 28px;
+  background: #009edb;
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  max-width: fit-content;
+  gap: 0.75em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.counter__box {
+  text-align: center;
+  background: blue;
+  width: 89px;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+.counter__time {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.counter__duration {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+}
+
+/* HELPERS */
+
+.dots {
+  font-size: 52px;
+  color: #002e46;
+  margin: -0.75rem;
+  padding: 0;
+}
+
+.exp {
+  font-size: 52px;
+  font-family: "Roboto", sans-serif;
+}
+
+.black-white {
+  background: linear-gradient(
+    to top,
+    #002e46 0%,
+    #002e46 50%,
+    #4d707f 50%,
+    #4d707f 100%
+  );
+}
+
+.sky-blue {
+  background: linear-gradient(
+    to top,
+    #009edb 0%,
+    #009edb 50%,
+    rgba(127, 206, 236, 0.95) 50%,
+    rgba(127, 206, 236, 0.95) 100%
+  );
+}
+	</style>			
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("10 1, 2025 11:36:10").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        let countdownDays = document.getElementById("days");
+        let countdownHours = document.getElementById("hours");
+        let countdownMinutes = document.getElementById("minutes");
+        let countdownSeconds = document.getElementById("seconds");
+  
+        countdownDays.innerHTML = days;
+        countdownHours.innerHTML = hours;
+        countdownMinutes.innerHTML = minutes;
+        countdownSeconds.innerHTML = seconds;
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    //document.getElementById("demo").innerHTML = `<div class="exp">Started on 30 Jan 2023</div>`;
+      
+        countdownDays.innerHTML = '00';
+        countdownHours.innerHTML = '00';
+        countdownMinutes.innerHTML = '00';
+        countdownSeconds.innerHTML = '00';
+  }
+  //location.reload();
+}, 1000);
+</script>
+			</section>
+			
+        </div>
+    </body>
+</html>
